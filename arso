@@ -1,1 +1,4 @@
-echo "Funciona"
+chmod +x copia_seguridad.sh
+printf "n\np\n1\n\n\nw\n" | sudo fdisk /dev/vdb
+printf "n\np\n1\n\n\nw\n" | sudo fdisk /dev/vdc
+printf "t\n8e\nw\n" | sudo fdisk /dev/vdc
